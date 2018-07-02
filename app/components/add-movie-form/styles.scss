@@ -1,27 +1,26 @@
 & {
-    .add-movie{
+  &.add-movie{
     color:black;
-    background-color: black;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:0px;
-    width:0px;
     overflow-y: hidden;
-  }
-  input {
-    width:60%;
+    & input {
+      height:40px;
+      border-radius: 5px;
+      border:3px solid #8E0221;
+      margin: 5px;
+      font-size: 1rem;
+      width:95%;
+    }
+    & button {
     height:40px;
     border-radius: 5px;
+    border: 3px solid #8E0221;
     margin: 5px;
     font-size: 1rem;
-  }
-  button {
-  width:50%;
-  height:40px;
-  border-radius: 5px;
-  margin: 5px;
-  font-size: 1rem;
+    cursor: pointer;
+    }
   }
 }
