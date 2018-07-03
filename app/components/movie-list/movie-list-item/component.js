@@ -1,5 +1,9 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-  movies: null
+  tagName: 'li',
+
+  classNames: ['movie-list-item'],
+
+  movie: null
 });

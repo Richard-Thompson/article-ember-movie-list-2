@@ -1,5 +1,7 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-  tagname: 'h1'
+  classNames:['movie-list-header'],
+
+  tagName: 'h1'
 });

@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'ember-movie-list-2',
+    modulePrefix: 'ember-movie-list',
     environment,
     rootURL: '/',
     locationType: 'auto',
