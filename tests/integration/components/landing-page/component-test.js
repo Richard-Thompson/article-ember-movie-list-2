@@ -12,15 +12,7 @@ module('Integration | Component | landing-page', function(hooks) {
 
     await render(hbs`{{landing-page}}`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.ok(this.$().length);
 
-    // Template block usage:
-    await render(hbs`
-      {{#landing-page}}
-        template block text
-      {{/landing-page}}
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
   });
 });

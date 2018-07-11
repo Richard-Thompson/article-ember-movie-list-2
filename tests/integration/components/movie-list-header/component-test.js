@@ -12,15 +12,6 @@ module('Integration | Component | movie-list-header', function(hooks) {
 
     await render(hbs`{{movie-list-header}}`);
 
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      {{#movie-list-header}}
-        template block text
-      {{/movie-list-header}}
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.ok(this.$().length);
   });
 });

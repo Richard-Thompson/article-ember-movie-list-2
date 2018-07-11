@@ -1,5 +1,6 @@
 'use strict';
-const apiKey = process.env.EMBER_FIREBASE_API_KEY;
+const firebase = require('./firebase');
+
 
 module.exports = function(environment) {
   let ENV = {
@@ -22,14 +23,9 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
-    firebase: {
-      apiKey: apiKey,
-      authDomain: "movie-list-7a45c.firebaseapp.com",
-      databaseURL: "https://movie-list-7a45c.firebaseio.com",
-      projectId: "movie-list-7a45c",
-      storageBucket: "movie-list-7a45c.appspot.com",
-      messagingSenderId: "78828372757"
-    }
+
+    firebase
+    
   };
 
   if (environment === 'development') {

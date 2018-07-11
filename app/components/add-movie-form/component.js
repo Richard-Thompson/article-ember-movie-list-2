@@ -10,7 +10,9 @@ export default Component.extend({
 
   add:null,
 
-  submit () {
+  submit (event) {
+    event.preventDefault();
     this.get('add')(this.get('title'), this.get('description'), this.get('image'));
+    this.setProperties({'title': null, 'image': null, 'description': null});
   }
 });

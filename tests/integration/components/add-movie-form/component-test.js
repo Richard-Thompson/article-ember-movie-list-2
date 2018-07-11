@@ -12,15 +12,7 @@ module('Integration | Component | add-movie-form', function(hooks) {
 
     await render(hbs`{{add-movie-form}}`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.ok(this.$().length);
 
-    // Template block usage:
-    await render(hbs`
-      {{#add-movie-form}}
-        template block text
-      {{/add-movie-form}}
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
   });
 });

@@ -12,15 +12,6 @@ module('Integration | Component | movie-list', function(hooks) {
 
     await render(hbs`{{movie-list}}`);
 
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      {{#movie-list}}
-        template block text
-      {{/movie-list}}
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.ok(this.$().length);
   });
 });
